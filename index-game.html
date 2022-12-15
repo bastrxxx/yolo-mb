@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stickman</title>
+	<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="sass/yolomain-mb.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="sass/swiper.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+	<div class="wrapper" id="dkLogin">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl  modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					  </button>
+					  <img src="images/popup.jpg" class="mw-100 d-block mx-auto"/>    
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
+
+		
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl  modal-dialog-centered">
+			  <div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					  </button>
+					  <div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+			   allowfullscreen></iframe>
+					 </div>	    
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
+
+		  <!----Popup Chưa có Link button sticky-->
+		<div class="modal fade modal-dk" id="chuacolink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+				<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+				</button>
+				<div class="content-dksom">
+					<h4 class="pt-5 mt-5">Đang cập nhật, Xin quay lại sau.</h4>
+					<a class="btn btn-dangky"  data-bs-dismiss="modal" aria-label="Close">
+					<span class="textsub">Quay lại</span>
+					<img src="images/btn-submit.png" alt="">
+					</a>
+				</div>   
+				</div>
+			</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<div id="layout">
+			<div class="download fixed-top px-3 py-2">
+				<div class="container p-0">
+					<div class="left">
+						<img class="icongame me-2" src="images/iconyolo.png" alt=""/>
+						<div class="title-game">
+							<h4>Yolo</h4>
+						</div>
+					</div>
+					<div class="right">
+						<a href="#" class="d-block" data-bs-toggle="modal" data-bs-target="#myModal"><img class="android" src="images/taigame.png" alt=""/></a>
+						<!-- <a href="#" class="d-block"><img class="ios" src="images/taiios.png" alt=""/></a>
+						<a href="#" class="d-block"><img class="apk" src="images/taiapk.png" alt=""/></a> -->
+						<a href="#" class="btnlist ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+				<div class="offcanvas-header">
+				  <h4 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h4>
+				  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<img class="icong" src="images/iconyolo.png" alt="">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item py-3"><a href="#"><img class="me-2" src="images/ico-nav.png" alt=""/>Danh sách game</a></li>
+						<li class="list-group-item py-3"><a href="#"><img class="me-2" src="images/ico-nav.png" alt=""/>Fanpage</a></li>
+						<li class="list-group-item py-3"><a href="#"><img class="me-2" src="images/ico-nav.png" alt=""/>Group</a></li>
+						<li class="list-group-item py-3"><a href="#"><img class="me-2" src="images/ico-nav.png" alt=""/>Hỗ trợ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="allcontent mb-5 mt-3">
+				<div class="container px-0">
+					<div class="gameinfo">
+						<img class="imggame" src="images/bggame.jpg" alt=""/>
+						<div class="info my-3">
+							<div class="infomain p-4">
+								<img class="logog d-block mx-auto mb-3" src="images/logogame.png"/>
+								<div class="title mb-3"><img src="images/icon-title-3.png"/><h3 class="title ms-3">Giới thiệu</h3></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contentgame container p-5">
+					<div class="title mb-3"><img src="images/icon-title-2.png"/><h3 class="title ms-3 mb-0">Mô tả game</h3></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<div class="title mb-3"><img src="images/icon-title-4.png"/><h3 class="title ms-3 mb-0">Thể lệ</h3></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<div class="title mb-3"><img src="images/icon-title-5.png"/><h3 class="title ms-3 mb-0">Hướng dẫn</h3></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+				</div>
+				<div class="othergame container px-0">
+					<h4 class="title-othergame px-5 py-2">Game khác</h4>
+					<div class="slider-game p-4">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="blockgame">
+									<img src="images/icon-game.jpg" alt=""/>
+									<h5 class="mt-3">Game 1234</h5>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="blockgame">
+									<img src="images/icon-game.jpg" alt=""/>
+									<h5 class="mt-3">Game 1234</h5>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="blockgame">
+									<img src="images/icon-game.jpg" alt=""/>
+									<h5 class="mt-3">Game 1234</h5>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="blockgame">
+									<img src="images/icon-game.jpg" alt=""/>
+									<h5 class="mt-3">Game 1234</h5>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="blockgame">
+									<img src="images/icon-game.jpg" alt=""/>
+									<h5 class="mt-3">Game 1234</h5>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="blockgame">
+									<img src="images/icon-game.jpg" alt=""/>
+									<h5 class="mt-3">Game 1234</h5>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-menu">
+					<ul class="ps-0">
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#">Fanpage</a></li>
+						<li><a href="#">Cộng đồng</a></li>
+						<li><a href="#">Sự kiện</a></li>
+						<li><a href="#">Hỗ trợ</a></li>
+					</ul>
+				</div>
+				<div class="footer-content py-5">
+					<img class="d-block mb-4" src="images/logovplay.png" alt="" />
+					<p>Hotline: <strong>1900866666</strong> - Email: <strong>hotro@vplay.vn</strong></p>
+
+					<p>	Giấy phép phê duyệt nội dung số 52/QĐ-BTTTT cấp ngày 19/01/2022</p>
+				</div>
+				
+			</div>
+		</div><!---end layout-->
+	</div><!----Wrapper-->
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+</script>
+</html>
